@@ -1,18 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>AliExpress Redirect</title>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get("q");
-    if (q) {
-      const formatted = q.trim().split(" ").join("-");
-      window.location.href = "https://pt.aliexpress.com/w/wholesale-" + formatted + ".html";
-    } else {
-      document.body.innerText = "Nenhuma busca especificada.";
-    }
-  </script>
-</head>
-<body></body>
-</html>
+
